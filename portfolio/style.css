@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+    background-color: #72DFD9; /* Blue background color */
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 40px;
+        left: 0; /* Reset left position for smaller screens */
+        width: 100%; /* Take full width of the screen on smaller devices */
+    }
+}
+
+.marlonpfp {
+    display: flex;
+    position: fixed;
+    top: -60px;
+    left: 15px; /* Adjusted left position relative to the header */
+    max-height: 200px; /* Limit maximum height */
+}
+
+@media (max-width: 480px) {
+    .marlonpfp {
+        position: absolute; /* Change position to absolute for smaller screens */
+        top: 0; /* Reset top position */
+        left: 20px; /* Adjust left position for smaller screens */
+    }
+}
+.naam{
+    position: fixed; /* Ensure proper positioning */
+    display: flex;
+    z-index: 2; /* Set z-index */
+    left: 230px;
+    top: 0px;
+}
+
+.portfolio{
+
+    position: fixed; /* Ensure proper positioning */
+    display: flex;
+    z-index: 3; /* Set z-index */
+    left: 1250px;
+    top: 0px;
+}
+.aboutme{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 60px;
+    font-family: inter;
+    font-size: 5rem;
+}
